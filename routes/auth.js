@@ -1,4 +1,5 @@
-// path: 
+// path: api/login
+
 const { check } = require('express-validator');
 const { createUser, loginUser, renewToken } = require('../controllers/auth');
 const { Router, response } = require('express');

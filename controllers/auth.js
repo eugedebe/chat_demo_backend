@@ -6,6 +6,7 @@ const { generateJWT } = require('../helpers/jwt');
 const createUser = async (req, res = response) => {
 
     try {
+        const { email, password, name } = req.body;
 
         const mailExists = await User.findOne({ email });
         if (mailExists) {

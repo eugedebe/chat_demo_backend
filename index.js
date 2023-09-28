@@ -30,6 +30,8 @@ app.use(express.static(publicPath));
 
 //Routes Definition
 app.use('/api/login', require('./routes/auth'));
+app.use('/api/users', require('./routes/user'));
+app.use('/api/messages', require('./routes/messages'));
 
 
 
